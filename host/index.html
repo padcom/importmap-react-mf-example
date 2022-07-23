@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Example: Loading ESM modules from external libraries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="importmap">
+    {
+      "imports": {
+        "library1": "http://localhost:3001/index.js",
+        "lodash": "https://ga.jspm.io/npm:lodash@4.17.21/lodash.js",
+        "scheduler": "https://ga.jspm.io/npm:scheduler@0.24.0-next-e61fd91f5-20220630/dev.index.js",
+        "process": "https://ga.jspm.io/npm:@jspm/core@2.0.0-beta.24/nodelibs/browser/process.js",
+        "react": "https://ga.jspm.io/npm:react@18.3.0-next-e61fd91f5-20220630/dev.index.js",
+        "react-dom": "https://ga.jspm.io/npm:react-dom@18.3.0-next-e61fd91f5-20220630/dev.index.js",
+        "react-dom/client": "https://ga.jspm.io/npm:react-dom@18.3.0-next-e61fd91f5-20220630/dev.client.js"
+      }
+    }
+  </script>
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+</html>
